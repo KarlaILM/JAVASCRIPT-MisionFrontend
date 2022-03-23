@@ -39,27 +39,19 @@ const pokeImage = (url) => {
 }
 
 const imprimirCaracteristicas = (data) => {
-    nombrePokemon.innerText = data.name.toUpperCase();
-    tipoPokemon.innerText = "";
+        nombrePokemon.innerText = data.name.toUpperCase();
+        tipoPokemon.innerText = "";
 
-    for (let i = 0; i < data.types.length; i++) {
-        const type = document.createElement("span");
-        type.classList.add("tipoPokemon");
-        tipoPokemon.appendChild(type);
+        for (let i = 0; i < data.types.length; i++) {
+            const type = document.createElement("span");
+            type.classList.add("tipoPokemon");
+            tipoPokemon.appendChild(type);
 
-        type.innerText = data.types[i].type.name;
-    }
-    idPokemon.innerText = data.id;
-    alturaPokemon.innerText = data.height;
-    pesoPokemon.innerText = data.weight;
-}
-const imprimirEstadisticas = (data) => {
-        hpPokemon.innerText = data.stats[0].base_stat;
-        atkPokemon.innerText = data.stats[1].base_stat;
-        defPokemon.innerText = data.stats[2].base_stat;
-        satkPokemon.innerText = data.stats[3].base_stat;
-        sdefPokemon.innerText = data.stats[4].base_stat;
-        spdPokemon.innerText = data.stats[5].base_stat;
+            type.innerText = data.types[i].type.name;
+        }
+        idPokemon.innerText = data.id;
+        alturaPokemon.innerText = data.height;
+        pesoPokemon.innerText = data.weight;
     }
     // pokeImage("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png");
 
