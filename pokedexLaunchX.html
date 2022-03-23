@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pokedexLaunchX.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Pokedex LaunchX</title>
+</head>
+
+<body>
+    <div class="pokedex-container">
+        <div class="pokedex-left">
+            <div class="header-pokedex">
+                <div class="circle turquesa circle-size-lg"></div>
+                <div class="circle rojo circle-size-sm"></div>
+                <div class="circle amarillo circle-size-sm"></div>
+                <div class="circle verde circle-size-sm"></div>
+            </div>
+            <div class="pokedex-screen">
+                <div class="pokedex-screen-content">
+                    <h3 class="title" id="nombrePokemon">Pokedex</h3>
+                    <p id="tipoPokemon"></p>
+                    <div class="align">
+                        <div class="img-pokemon">
+                            <img src="./images/pokebola.png" alt="pokebola" width="60px" id="pokeImg" /><br>
+                        </div>
+                        <div class="text">
+                            <p>ID: <span id="idPokemon"></span></p>
+                            <p>Altura: <span id="alturaPokemon"></span> </p>
+                            <p>Peso: <span id="pesoPokemon"></span> </p>
+                        </div>
+                    </div>
+                    <p>Estadisticas</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; justify-content: center;">
+                            <span id="hpPokemon"></span>
+                            <p style="margin: 0;">HP</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span id="atkPokemon"></span>
+                            <p style="margin: 0;">ATK</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span id="defPokemon"></span>
+                            <p style="margin: 0;">DEF</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span id="satkPokemon"></span>
+                            <p style="margin: 0;">SATK</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span id="sdefPokemon"></span>
+                            <p style="margin: 0;">SDEF</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span id="spdPokemon"></span>
+                            <p style="margin: 0;">SPD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="circle azul circle-size-md"></div>
+                <div class="ovalo verde"></div>
+                <div class="ovalo amarillo"></div>
+            </div>
+            <div class="input-pokedex">
+                <input type="text" placeholder="Busca a tu pokemon" id="pokeName" name="pokeName" /><br>
+                <button onclick="fetchPokemon()">Cambiar pokemon</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./pokedexLaunchX.js"></script>
+</body>
+
+</html>

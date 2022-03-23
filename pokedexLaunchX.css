@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.pokedex-container {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: -3px 4px 3px black;
+}
+
+.circle-size-sm {
+    height: 20px;
+    width: 20px;
+}
+
+.circle-size-md {
+    height: 30px;
+    width: 30px;
+}
+
+.circle-size-lg {
+    height: 40px;
+    width: 40px;
+}
+
+.ovalo {
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: -3px 4px 3px black;
+}
+
+.turquesa {
+    background-color: #01fbfb;
+}
+
+.rojo {
+    background-color: #dd082f;
+}
+
+.amarillo {
+    background-color: #ffcc02;
+}
+
+.verde {
+    background-color: #2ff901;
+}
+
+.azul {
+    background-color: #519afb;
+}
+
+.pokedex-container {
+    max-width: 400px;
+}
+
+.pokedex-left {
+    /* max-width: 50%; */
+    background-color: #dd082f;
+    min-height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-pokedex {
+    display: flex;
+    gap: 10px;
+}
+
+.pokedex-screen {
+    width: 100%;
+    height: 350px;
+    background-color: #b0b0b0;
+    margin: 20px 0;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+#tipoPokemon {
+    margin-top: 0;
+    text-align: center;
+}
+
+.pokedex-screen-content {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.title {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text p {
+    margin: 0;
+}
+
+.input-pokedex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 30px 0;
+}
+
+.input-pokedex input {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-pokedex button {
+    height: 30px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: #a41518;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pokedex-right {
+    max-width: 50%;
+    background-color: #dd082f;
+}
